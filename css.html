@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Katy Adams | Portfolio</title>
+  <link rel="icon" type="image/x-icon" href="./resources/images/FaviconLight.png">
+  <link href="./resources/css/index.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu|Space+Grotesk|Glegoo">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+
+<body>
+  <header role="banner" class="navbar">
+    <nav role="navigation" class="site-header-nav">
+      <ul class="site-nav-left">
+        <li><a href="index.html" class="site-nav-home"><img src="./resources/images/LightLogo.png"></a></li>
+      </ul>
+      <ul class="site-nav-right">
+        <li class="dropdown">
+          <button class="dropbtn">Cheatsheet</button>
+          <div class="dropdown-content">
+            <a href="html.html">HTML</a>
+            <a href="css.html">CSS</a>
+          </div>
+        </li>
+        <li><a href="style-guide.html" class="site-nav-link">Website Style Guide</a></li>
+        <li><a href="to-do.html" class="site-nav-link">To-Do</a></li>
+        <li><a href="about.html" class="site-nav-link">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<div class="pagetitle">
+  <h1>CSS</h1>
+</div>
+
+<h6>This page is a work in progress</h6>
+
+<div class="sectiontitle">
+  <h2>Flexbox Attributes</h2>
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Attribute</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="code">display: flex</span></td>
+      <td>Changes an element to a block-level container with flex items inside of it.</td>
+    </tr>
+    <tr>
+      <td><span class="code">display: inline-flex</span></td>
+      <td>Allows multiple flex containers to appear inline with each other.</td>
+    </tr>
+    <tr>
+      <td><span class="code">justify-content</span></td>
+      <td>is used to space items along the main axis.</td>
+    </tr>
+    <tr>
+      <td><span class="code">align-items</span></td>
+      <td>is used to space items along the cross axis.</td>
+    </tr>
+    <tr>
+      <td><span class="code">flex-grow</span></td>
+      <td>is used to specify how much space (and in what proportions) flex items absorb along the main axis.</td>
+    </tr>
+    <tr>
+      <td><span class="code">flex-shrink</span></td>
+      <td>is used to specify how much flex items shrink and in what proportions along the main axis.</td>
+    </tr>
+    <tr>
+      <td><span class="code">flex-basis</span></td>
+      <td>is used to specify the initial size of an element styled with <span class="code">flex-grow</span> and/or <span class="code">flex-shrink</span>.</td>
+    </tr>
+    <tr>
+      <td><span class="code">flex</span></td>
+      <td>is used to specify <span class="code">flex-grow</span>, <span class="code">flex-shrink</span>, and <span class="code">flex-basis</span> in one declaration.</td>
+    </tr>
+    <tr>
+      <td><span class="code">flex-wrap</span></td>
+      <td>specifies that elements should shift along the cross axis if the flex container is not large enough.</td>
+    </tr>
+    <tr>
+      <td><span class="code">align-content</span></td>
+      <td>is used to space rows along the cross axis.</td>
+    </tr>
+    <tr>
+      <td><span class="code">flex-direction</span></td>
+      <td>is used to specify the main and cross axes.</td>
+    </tr>
+    <tr>
+      <td><span class="code">flex-flow</span></td>
+      <td>is used to specify <span class="code">flex-wrap</span> and <span class="code">flex-direction</span> in one declaration.</td>
+    </tr>
+    <tr>
+      <td colspan="2">Flex containers can be nested inside of each other by declaring <span class="code">display: flex</span> or <span class="code">display: inline-flex</span> for children of flex containers.</td>
+    </tr>
+ 
+
+  </tbody>
+</table>
+
+<div class="sectiontitle">
+  <h2>Default CSS Values</h2>
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Element</th>
+      <th>Default Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>a:link, a:visited</td>
+      <td>
+        <span class="code">color: (internal value);</span><br>
+        <span class="code">text-decoration: underline;</span><br>
+        <span class="code">cursor: auto;</span>
+      </td>
+    </tr>
+    <tr>
+      <td>a:link:active, a:visited:active</td>
+      <td>
+        <span class="code">color: (internal value);</span>
+      </td>
+    </tr>
+    <tr>
+      <td>address</td>
+      <td>
+        <span class="code">display: block;</span><br>
+        <span class="code">font-style: italic;</span>
+      </td>
+    </tr>
+    <tr>
+      <td>area</td>
+      <td>
+        <span class="code">display: none;</span>
+      </td>
+    </tr>
+    <tr>
+      <td>article</td>
+      <td>
+        <span class="code">display: block;</span>
+      </td>
+    </tr>
+    <tr>
+      <td>aside</td>
+      <td>
+        <span class="code">display: block;</span>
+      </td>
+    </tr>
+    <tr>
+      <td>blockquote</td>
+      <td>
+        <span class="code">display: block;</span><br>
+        <span class="code">margin-top: 1em;</span><br>
+        <span class="code">margin-top: 1em;</span><br>
+        <span class="code">margin-top: 40px;</span><br>
+        <span class="code">margin-top: 40px;</span><br>
+      </td>
+    </tr>
+    <tr>
+      <td>body</td>
+      <td>
+        <span class="code">display: block;</span><br>
+        <span class="code">margin: 8px;</span>
+      </td>
+    </tr>
+    <tr>
+      <td>body:focus</td>
+      <td>
+        <span class="code">outline: none;</span>
+      </td>
+    </tr>
+    <tr>
+      <td>caption</td>
+      <td>
+        <span class="code">display: table-caption;</span><br>
+        <span class="code">text-align: center;</span>
+      </td>
+    </tr>
+    <tr>
+      <td>cite</td>
+      <td>
+        <span class="code">font-style: italic;</span>
+      </td>
+    </tr>
+    <tr>
+      <td>code</td>
+      <td>
+        <span class="code">font-family: monospace;</span>
+      </td>
+    </tr>
+    <tr>
+      <td>col</td>
+      <td>
+        <span class="code">display: table-column;</span>
+      </td>
+    </tr>
+    <tr>
+      <td>colgroup</td>
+      <td>
+        <span class="code">display: table-column-group;</span>
+      </td>
+    </tr>
+    <tr>
+      <td>datalist</td>
+      <td>
+        <span class="code">display: none;</span>
+      </td>
+    </tr>
+    <tr>
+      <td>dd</td>
+      <td>
+        <span class="code">display: block;</span><br>
+        <span class="code">margin-left: 40px;</span>
+      </td>
+    </tr>
+    <tr>
+      <td>del</td>
+      <td>
+        <span class="code">text-decoration: line-through;</span>
+      </td>
+    </tr>
+    <tr>
+      <td>details</td>
+      <td>
+        <span class="code">display: block;</span>
+      </td>
+    </tr>
+    <tr>
+      <td>dfn</td>
+      <td>
+        <span class="code">font-style: italic;</span>
+      </td>
+    </tr>
+    <tr>
+      <td>div</td>
+      <td>
+        <span class="code">display: block;</span>
+      </td>
+    </tr>
+    <tr>
+      <td>dl</td>
+      <td>
+        <span class="code">display: block;</span><br>
+        <span class="code">margin-top: 1em;</span><br>
+        <span class="code">margin-top: 1em;</span><br>
+        <span class="code">margin-top: 0;</span><br>
+        <span class="code">margin-top: 0;</span>
+      </td>
+    </tr>
+    <tr>
+      <td>dt</td>
+      <td>
+        <span class="code">display: block;</span>
+      </td>
+    </tr>
+    <tr>
+      <td>em</td>
+      <td>
+        <span class="code">font-style: italic;</span>
+      </td>
+    </tr>
+    <tr>
+      <td>embed:focus</td>
+      <td>
+        <span class="code">outline: none;</span>
+      </td>
+    </tr>
+    <tr>
+      <td>fieldset</td>
+      <td>
+        <span class="code">display: block;</span><br>
+        <span class="code">margin-left: 2px;</span><br>
+        <span class="code">margin-right: 2px;</span><br>
+        <span class="code">padding-top: 0.35em;</span><br>
+        <span class="code">padding-bottom: 0.625em;</span><br>
+        <span class="code">padding-left: 0.75em;</span><br>
+        <span class="code">padding-right: 0.75em;</span><br>
+        <span class="code">border; 2px groove (internal value);</span>
+      </td>
+    </tr>
+    <tr>
+      <td>figcaption</td>
+      <td>
+        <span class="code">display: block;</span>
+      </td>
+    </tr>
+    <tr>
+      <td>figure</td>
+      <td>
+        <span class="code">display: block;</span><br>
+        <span class="code">margin-top: 1em;</span><br>
+        <span class="code">margin-bottom: 1em;</span><br>
+        <span class="code">margin-left: 40px;</span><br>
+        <span class="code">margin-right: 40px;</span>
+      </td>
+    </tr>
+    <tr>
+      <td>footer</td>
+      <td>
+        <span class="code">display: block;</span>
+      </td>
+    </tr>
+    <tr>
+      <td>form</td>
+      <td>
+        <span class="code">display: block;</span><br>
+        <span class="code">margin-top: 0em;</span>
+      </td>
+    </tr>
+    <tr>
+      <td>h1</td>
+      <td>
+        <span class="code">display: block;</span><br>
+        <span class="code">font-size: 2em;</span><br>
+        <span class="code">margin-top: 0.67em;</span><br>
+        <span class="code">margin-bottom: 0.67em;</span><br>
+        <span class="code">margin-left: 0;</span><br>
+        <span class="code">margin-right: 0;</span><br>
+        <span class="code">font-weight: bold;</span>
+      </td>
+    </tr>
+    <tr>
+      <td>h2</td>
+      <td>
+        <span class="code">display: block;</span><br>
+        <span class="code">font-size: 1.5em;</span><br>
+        <span class="code">margin-top: 0.83em;</span><br>
+        <span class="code">margin-bottom: 0.83em;</span><br>
+        <span class="code">margin-left: 0;</span><br>
+        <span class="code">margin-right: 0;</span><br>
+        <span class="code">font-weight: bold;</span>
+      </td>
+    </tr>
+    <tr>
+      <td>h3</td>
+      <td>
+        <span class="code">display: block;</span><br>
+        <span class="code">font-size: 1.17em;</span><br>
+        <span class="code">margin-top: 1em;</span><br>
+        <span class="code">margin-bottom: 1em;</span><br>
+        <span class="code">margin-left: 0;</span><br>
+        <span class="code">margin-right: 0;</span><br>
+        <span class="code">font-weight: bold;</span>
+      </td>
+    </tr>
+    <tr>
+      <td>h4</td>
+      <td>
+        <span class="code">display: block;</span><br>
+        <span class="code">margin-top: 1.33em;</span><br>
+        <span class="code">margin-bottom: 1.33em;</span><br>
+        <span class="code">margin-left: 0;</span><br>
+        <span class="code">margin-right: 0;</span><br>
+        <span class="code">font-weight: bold;</span>
+      </td>
+    </tr>
+    <tr>
+      <td>h5</td>
+      <td>
+        <span class="code">display: block;</span><br>
+        <span class="code">font-size: 0.83em;</span><br>
+        <span class="code">margin-top: 1.67em;</span><br>
+        <span class="code">margin-bottom: 1.67em;</span><br>
+        <span class="code">margin-left: 0;</span><br>
+        <span class="code">margin-right: 0;</span><br>
+        <span class="code">font-weight: bold;</span>
+      </td>
+    </tr>
+    <tr>
+      <td>h6</td>
+      <td>
+        <span class="code">display: block;</span><br>
+        <span class="code">font-size: 0.67em;</span><br>
+        <span class="code">margin-top: 2.33em;</span><br>
+        <span class="code">margin-bottom: 2.33em;</span><br>
+        <span class="code">margin-left: 0;</span><br>
+        <span class="code">margin-right: 0;</span><br>
+        <span class="code">font-weight: bold;</span>
+      </td>
+    </tr>
+    <tr>
+      <td>head</td>
+      <td>
+        <span class="code">display: none;</span>
+      </td>
+    </tr>
+    <tr>
+      <td>header</td>
+      <td>
+        <span class="code">display: block;</span>
+      </td>
+    </tr>
+    <tr>
+      <td>hr</td>
+      <td>
+        <span class="code">display: block;</span><br>
+        <span class="code">margin-top: 0.5em;</span><br>
+        <span class="code">margin-bottom: 0.5em;</span><br>
+        <span class="code">margin-left: auto;</span><br>
+        <span class="code">margin-right: auto;</span><br>
+        <span class="code">border-style: inset;</span><br>
+        <span class="code">border-width: 1px;</span>
+      </td>
+    </tr>
+    <tr>
+      <td>html</td>
+      <td>
+        <span class="code">display: block;</span>
+      </td>
+    </tr>
+    <tr>
+      <td>html:focus</td>
+      <td>
+        <span class="code">outline: none;</span>
+      </td>
+    </tr>
+    <tr>
+      <td>i</td>
+      <td>
+        <span class="code">font-style: italic;</span>
+      </td>
+    </tr>
+    <tr>
+      <td>iframe:focus</td>
+      <td>
+        <span class="code">outline: none;</span>
+      </td>
+    </tr>
+    <tr>
+      <td>iframe[seamless]</td>
+      <td>
+        <span class="code">display: block;</span>
+      </td>
+    </tr>
+    <tr>
+      <td>img</td>
+      <td>
+        <span class="code">display: inline-block;</span>
+      </td>
+    </tr>
+    <tr>
+      <td>ins</td>
+      <td>
+        <span class="code">text-decoration: underline;</span>
+      </td>
+    </tr>
+    <tr>
+      <td>kbd</td>
+      <td>
+        <span class="code">font-family: monospace;</span>
+      </td>
+    </tr>
+    <tr>
+      <td>label</td>
+      <td>
+        <span class="code">cursor: default;</span>
+      </td>
+    </tr>
+    <tr>
+      <td>legend</td>
+      <td>
+        <span class="code">display: block;</span><br>
+        <span class="code">padding-left: 2px;</span><br>
+        <span class="code">padding-right: 2px;</span><br>
+        <span class="code">border: none;</span>
+      </td>
+    </tr>
+    <tr>
+      <td>li</td>
+      <td>
+        <span class="code">display: list-item;</span>
+      </td>
+    </tr>
+    <tr>
+      <td>link</td>
+      <td>
+        <span class="code">display: none;</span>
+      </td>
+    </tr>
+    <tr>
+      <td>map</td>
+      <td>
+        <span class="code">display: inline;</span>
+      </td>
+    </tr>
+    <tr>
+      <td>mark</td>
+      <td>
+        <span class="code">background-color: yellow;</span><br>
+        <span class="code">color: black;</span>
+      </td>
+    </tr>
+    <tr>
+      <td>menu</td>
+      <td>
+        <span class="code">display: block;</span><br>
+        <span class="code">list-style-type: disc;</span><br>
+        <span class="code">margin-top: 1em;</span><br>
+        <span class="code">margin-bottom: 1em;</span><br>
+        <span class="code">margin-left: 0;</span><br>
+        <span class="code">margin-right: 0;</span><br>
+        <span class="code">padding-left: 40px;</span>
+      </td>
+    </tr>   
+
+  </tbody>
+</table>
+
+</html>
